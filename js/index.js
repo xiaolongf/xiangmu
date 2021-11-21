@@ -39,11 +39,12 @@ $('.ebooks .right-box ul > li').mouseenter(function(){
     //当前：隐藏标题，显示详情
     $(this).find('.ebooks-title').hide();
     $(this).find('.desc').show();
-});
+});   
+
 $('#clothes-banner').tyslide({
-    boxh:340,//盒子的高度
-    w:429,//盒子的宽度
-    h:340,//图片的高度
+    boxh:337,//盒子的高度
+    w:426,//盒子的宽度
+    h:337,//图片的高度
     isShow:true,//是否显示控制器
     isShowBtn:true,//是否显示左右按钮
     controltop:10,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
@@ -53,9 +54,9 @@ $('#clothes-banner').tyslide({
     controlsCurrentColor:"#00ff00",//当前控制按钮的颜色
 });    
 $('#sport-banner').tyslide({
-    boxh:340,//盒子的高度
-    w:429,//盒子的宽度
-    h:340,//图片的高度
+    boxh:337,//盒子的高度
+    w:426,//盒子的宽度
+    h:337,//图片的高度
     isShow:true,//是否显示控制器
     isShowBtn:true,//是否显示左右按钮
     controltop:10,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
@@ -65,9 +66,9 @@ $('#sport-banner').tyslide({
     controlsCurrentColor:"#00ff00",//当前控制按钮的颜色
 });    
 $('#clidren-banner').tyslide({
-    boxh:340,//盒子的高度
-    w:429,//盒子的宽度
-    h:340,//图片的高度
+    boxh:337,//盒子的高度
+    w:426,//盒子的宽度
+    h:337,//图片的高度
     isShow:true,//是否显示控制器
     isShowBtn:true,//是否显示左右按钮
     controltop:10,//控制按钮上下偏移的位置,要将按钮向下移动   首先保证boxh 高度>图片 h
@@ -75,5 +76,24 @@ $('#clidren-banner').tyslide({
     controlsH:2,//控制按钮高度
     controlsColor:"#d7d7d7",//普通控制按钮的颜色
     controlsCurrentColor:"#00ff00",//当前控制按钮的颜色
-});    
+});   
+/*鼠标移入改变背景颜色 */
+$('.promotion .content .pigeon .promotion-list li').mouseover(function(){
+        $(this).css('background-color',"#ccc");
+});
+$('.promotion .content .pigeon .promotion-list li').mouseleave(function(){
+    $(this).css('background-color',"#fff");
+});
+
+$('.promotion .content .topp ul li').mouseenter(function(){
+    //当行激活类的切换
+    $(this).addClass('active').siblings().removeClass('active');
+    //内容切换
+    //获取对应的索引
+    var index=$(this).index();//0=>left:0*1170   ,1=>left:-1*-1170    ,1=>left:-1*1170,    3=>-2*1170
+    //左右移动
+    $('.promotion .content .pigeon .out-box .inner-box').animate({
+        'left':-index*1170
+    },1000);
+});
 })

@@ -1121,22 +1121,53 @@ background-color:darkgray;
     font-weight: 300;
     color:black;
 }
+.promotion .content .topp ul li{
+    width:15px;
+    float:left;
+    height:15px;
+    border-radius: 50%;
+    background-color:#ccc;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.promotion .content .topp ul li.active{
+    background-color: #ff6700;
+}
 .promotion .content .pigeon{
     width:1200px;
-    height:650px;
+    height:640px;
     background-color: white;
 }
-.promotion .content .pigeon > ul > li{
-    float: left;
-    margin-top: 10px;
-    width:240px;
-    height:305px;
-  background-color: white;
+/*外部*/
+.promotion .content .pigeon .out-box{
+    width: 1170px;
+    height:600px;
+    margin:20px auto;
+    /*超出隐藏*/
+    overflow: hidden;
+}
+.promotion .content .pigeon .out-box .inner-box{
+    width: 2340px;
+    height: 600px;
+    position: relative;
+    left:0;
+
+  
+}
+.promotion .content .pigeon .promotion-list{
+   width:1170px;
+   height: 600px;
 }
 
-.promotion .content .pigeon ul li .bigpng{
-    margin-top: 28px;
-    margin-left: 30px;
+.promotion .content .pigeon .promotion-list li{
+    width:214px;
+    float: left;
+    height: 300px;
+    margin-left: 20px;
+    background-color: #fff;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 25px;
 }
 .promotion .content .pigeon ul li .pigeontext{
     font-size:16px;
@@ -1275,4 +1306,19 @@ background-color:darkgray;
 .footer .logo img {
     width: 180px;
     height: 100px;
+}
+
+
+/*返回顶部*/
+.backTo{
+    width: 30px;
+    height:50px;
+    background-color: gold;
+    position: fixed;
+    left: 610px;
+    display: none;
+    margin-left: 50%;
+    bottom: 500px;
+    /*默认隐藏*/
+   
 }

@@ -1104,7 +1104,7 @@ background-color:darkgray;
 .promotion .content{
     height:680px;
     width:1200px;
-    background-color:pink ;
+    background-color:white ;
 }
 /*顶部*/
 .promotion .content .topp{
@@ -1219,7 +1219,7 @@ background-color:darkgray;
 }
 
 .footer .one-banner ul {
-    margin-left: 200px;
+    margin-left: 50px;
 }
 
 .footer .one-banner ul li {
@@ -1232,11 +1232,7 @@ background-color:darkgray;
 }
 
 .footer .one-banner ul li img {
-    
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+   
     margin: auto;
     /*使其垂直居中*/
 }
@@ -1252,7 +1248,7 @@ background-color:darkgray;
 
 .footer .two-banner .text li {
     float: left;
-    margin-left: 30px;
+    margin-left: 100px;
     text-indent: 50px
 }
 

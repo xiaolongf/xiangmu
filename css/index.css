@@ -1305,16 +1305,90 @@ background-color:darkgray;
 }
 
 
-/*返回顶部*/
-.backTo{
-    width: 30px;
-    height:50px;
-    background-color: gold;
+/*二维码*/
+.qr-code {
+    width: 40px;
+    height: 180px;
+    background-color: red;
+    /* 定位 */
     position: fixed;
-    left: 610px;
+    top: 185px;
+    right: 0;
+}
+
+.qr-code p {
+    width: 40px;
+    height: 40px;
+}
+
+.qr-code p img {
+    width: 100%;
+    height: 100%;
+}
+
+.qr-code p:nth-child(2) {
+    height: 100px;
+    background-color: #ff6700;
+}
+
+.qr-code div {
+    /* 定位 */
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: -10;
+}
+/*---------------顶部搜索框*/
+.top-search-box{
+    width: 100%;
+    height:50px;
+    line-height:50px;
+    background-color:rgba(255, 123, 0, 0.8);
+    /*定位*/
+    position: fixed;
+    top:0;
+    left: 0;
     display: none;
+}
+.top-search-box .search-box{
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    background-color: green;
+    margin: 10px auto;
+    background-image: url(../img/bgicon.png);
+    background-repeat: no-repeat;
+    background-position: 356px -2px;
+}
+.top-search-box .search-box input{
+    height: 26px;
+    width: 360px;
+    border: 2px solid #ff6700;
+    outline: none;
+    text-indent:10px;
+}
+/*---------------楼层*/
+.floor-box{
+    width: 40px;
+    height: 200px;
+    background-color: white;
+    position: fixed;
     margin-left: 50%;
-    bottom: 500px;
-    /*默认隐藏*/
-   
+    left:-640px;
+    top:200px;
+}
+.floor-box li{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    transition: all 0.3s;
+}
+.floor-box li:hover{
+    width: 80px;
+    color: white;
+    background-color:#93d56f;
+}
+.floor-box li img{
+    width: 40px;
+    height: 40px;
 }

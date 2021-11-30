@@ -3,10 +3,10 @@
  *2021-11-21 by 肖大大
  */
 $(function () {
-    window.gotoTop = function (options) {
+    window.gotoTop = function () {
 
 
-        var $gotoTopHtml = $(`<div class="backTo"><img src="${options.imgUrl}" alt=""></div>'`);
+        var $gotoTopHtml = $('<div class="backTo"><img src="../../imgs/gototop_05.jpg" alt=""></div>');
 
         $gotoTopHtml.css({
             width: '30px',

@@ -127,7 +127,7 @@ $(function () {
     function calcGoodsCount(){
          $('.goodsCount').text($('table tbody tr').length)
         }
-        calcTotalPrice();//一进入界面 就自定调用1次
+        calcGoodsCount();//一进入界面 就自定调用1次
    //删除选中商品
    $('.deleteCheaked').on('click',function(){
        //循环单选框 如果选中 删除自身(删除的一行)

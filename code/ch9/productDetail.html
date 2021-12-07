@@ -11,7 +11,9 @@
 	<!--引入样式-->
 	<link rel="stylesheet" href="../../css/reset.css">
 	<link rel="stylesheet" href="../../css/common.css">
-	<link rel="stylesheet" href="../../css/shopcart.css">
+	<link rel="stylesheet" href="../../css/magnifier.css">
+	<link rel="stylesheet" href="../../css/productDetail.css">
+
 </head>
 
 <body>
@@ -43,7 +45,7 @@
 		<div class="category-menu clearfix">
 			<!--左侧-->
 			<div class="left-logo fl">
-				<img src="../../imgs/logo.jpg" alt="">
+				<img src="../..../../imgs/书籍/logo.jpg" alt="">
 			</div>
 			<!--右侧-->
 			<div class="fr clearfix">
@@ -63,60 +65,98 @@
 		</div>
 	</div>
 
-	<div class="shopcart container">
-		<!--全部商品-->
-		<h3>全部商品(2)</h3>
-		<!--表格-->
-		<table>
-			<thead>
-				<tr>
-					<th><input type="checkbox">全选</th>
-					<th>商品</th>
-					<th>单价</th>
-					<th>数量</th>
-					<th>小计</th>
-					<th>操作</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td><input type="checkbox"></td>
-					<td>
-						<img src="/imgs/ebooks.jpg" alt="">从你的全世界路过
-					</td>
-					<td class="price">111.00</td>
-					<td>
-						<button class="add">+</button>
-						<input type="text" value="1">
-						<button class="reduce">-</button>
-					</td>
-					<td class="subprice">111.00</td>
-					<td class="del">删除</td>
-				</tr>
-				<tr>
-					<td><input type="checkbox"></td>
-					<td>
-						<img src="/imgs/ebooks.jpg" alt="">从你的全世界路过
-					</td>
-					<td class="price">41.00</td>
-					<td>
-						<button class="add">+</button>
-						<input type="text" value="1">
-						<button class="reduce">-</button>
-					</td>
-					<td class="subprice">41.00</td>
-					<td class="del">删除</td>
-				</tr>
-			</tbody>
-		</table>
-		<div class="totalPrice">
-			<input type="checkbox">全选 
-			<span>删除选中商品</span> 
-			 <span>已选择1件商品</span>
-			 <span class="total">总价：41.00</span>
-			 <button>去结算</button>
+	<div class="product-detail container clearfix">
+		<div class="left-box fl">
+			<!--放大镜容器-->
+			<div class="magnifier" id="magnifier1">
+				<div class="magnifier-container">
+					<!--当前图片显示容器-->
+					<div class="images-cover"></div>
+					<!--跟随鼠标移动的盒子-->
+					<div class="move-view"></div>
+
+				</div>
+				<div class="magnifier-assembly">
+					<div class="magnifier-btn">
+						<span class="magnifier-btn-left">&lt;</span>
+						<span class="magnifier-btn-right">&gt;</span>
+					</div>
+					<!--按钮组-->
+					<div class="magnifier-line">
+						<ul class="clearfix animation03">
+							<li>
+								<div class="small-img">
+									<img src="../../imgs/书籍/1.jpg" />
+								</div>
+							</li>
+							<li>
+								<div class="small-img">
+									<img src="../../imgs/书籍/2.jpg" />
+								</div>
+							</li>
+							<li>
+								<div class="small-img">
+									<img src="../../imgs/书籍/3.jpg" />
+								</div>
+							</li>
+							<li>
+								<div class="small-img">
+									<img src="../../../imgs/书籍/4.jpg" />
+								</div>
+							</li>
+							<li>
+								<div class="small-img">
+									<img src="../../imgs/书籍/5.jpg" />
+								</div>
+							</li>
+						</ul>
+					</div>
+					<!--缩略图-->
+				</div>
+				<div class="magnifier-view"></div>
+				<!--经过放大的图片显示容器-->
+			</div>
+		</div>
+		<div class="right-box fr clearfix">
+			
+			<div class="book-title">
+				<div class="right-title fr" style="margin-top: 100px; font-size: 18px;color:gray; border-left:solid;">
+				<p style="color: gray;">累计评价</p>
+				<p style="color: #ff6700;">99999</p>
+			</div>
+				<h1>金融炼精术</h1>
+				<p style="color: red; font-size: 18px;">《偷影子的人》作者马克.李维重磅新作，销量突破120万册</p>
+				<p style="font-size: 15px; color:gray;">[法] 马克.李维 著；杨亦雨 译</p>
+			</div>
+			<div class="book-center">
+				<p>乐购价：<font color="red"> ￥26.20 </font> &nbsp;&nbsp;[6.9折] [定价：￥38.00] &nbsp;&nbsp; (降价通知)</p>
+				<p>促销信息：满减 每满150.00元，可减50.00元现金 &nbsp;&nbsp; 详情>></p>
+				<p>领券:<span class="back-grd "> 100-6 </span><span class="back-grd">100-6</span></p>
+
+			</div>
+
+			<div class="ban-box">
+				<p>种类选择：
+					<button>平装版</button>
+					<button>精装版</button>
+				</p>
+			</div>
+			<div class="goods-box fl">
+				
+				<button class="add"  style="width: 30px;height: 50px;">+</button>
+				<input style="width: 50px; height: 48px;text-align: center;" type="text" value="1">
+				<button class="reduce" style="width: 30px;height: 50px;">-</button>	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				
+                
+			</div>	
+
+			<button class="goods-box " style="width: 100px; height: 50px; text-align: center; color: white; background-color: #ff6700; border:0;">加入购物车</button>			
+		</div>
+		<div class="button-box">
+			商品编号：11950959  &nbsp;温馨提示：支持7天无理由退货
 		</div>
 	</div>
+
 
 	<!-- 11.尾部-->
 	<div class="footer">
@@ -186,12 +226,13 @@
 			</ul>
 		</div>
 		<div class="logo">
-			<img src="../../img/logo111.png" alt="">
+			<img src="../../imgs/书籍/logo111.png" alt="">
 		</div>
 	</div>
 
 	<script src="../../js/jquery.min.js"></script>
-	<script src="../../js/shopcart.js"></script>
+	<script src="../../js/productDetail.js"></script>
+	<script src="../../js/magnifier(1).js"></script>
 	<!--引入轮播插件-->
 </body>
 

@@ -1,3 +1,59 @@
+.top-banner{
+    height: 550px;
+    width: 1200px;
+   
+}
+.top-banner .right-box{
+    width: 295px;
+    height: 456px;
+    box-sizing: border-box;
+}
+.top-banner .right-box  .top-title{
+    width:297px;
+    height: 30px;
+    background-color: rgb(131, 194, 37);
+}
+.top-banner .right-box .top-title h1{
+    text-align:left;
+    height:36px;
+    line-height: 36px;
+    font-size: 20px;
+    color:white;
+
+}
+.top-banner .right-box ul li{
+    line-height: 42px;
+    font-size: 16px;
+    text-indent: 5px;
+}
+
+/*新书列表交互相关样式*/
+.top-banner .right-box ul li .desc{
+    font-size: 14px;
+    line-height: 18px;
+    height:150px;
+    color:#474747;
+    display: none;
+}
+.top-banner .right-box ul li:first-child .ebooks-title{
+    /*默认所有标题都显示，只要第一个隐藏*/
+    display: none;
+}
+.top-banner .right-box ul li:first-child .desc{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .ez {
     height: 546px;
     margin: 50px, auto;
@@ -110,13 +166,41 @@ width:3600px;
 position: relative;
 left:0;
 } */
-.guess-you-like-content li{
-    width:1200px;
-    height: 500px;
-    float: left;
 
-}
 .guess-you-like-content li img{
     width: 100%;
     height: 100%;
+}
+.guess-you-like-content .inner-box .ez-list {
+    width: 1200px;
+    height: 500px;
+}
+
+.guess-you-like-content .inner-box .ez-list p {
+    width: 200px;
+    height: 220px;
+    float: left;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+}
+
+.guess-you-like-content .inner-box .ez-list p img {
+    width: 70% !important;
+    height: 70% !important;
+}
+
+.guess-you-like-content .inner-box .ez-list p span:last-child {
+    color: red;
+}
+
+.guess-you-like-content .inner-box .ez-list p .ccc {
+    color: #ccc;
+}
+
+.guess-you-like-content .inner-box .ez-list p .yj {
+    color: #ccc !important;
+    text-decoration: line-through;
+    font-size: 12px;
 }
